@@ -1,0 +1,73 @@
+// Import all the Functions of the Bootstrap.
+@import "../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../_variables";
+
+.login-component {
+    background-color: rgb(233 238 253 / 48%);
+    min-height: 100vh;
+    background-image: url(../../../assets/images/login.jpeg);
+    background-size: cover;
+
+    .image-box {
+        display: none;
+    }
+
+    .form {
+        padding: 1rem;
+        background-color: rgba(194, 202, 202, 0.593);
+
+        .card {
+            box-shadow: 2px 4px 10px rgba(43, 44, 44, 0.321), 1px 4px 5px rgba(194, 202, 202, 0.841);
+            // box-shadow: 2px 4px 10px black;
+        }
+    }
+
+    input {
+        border-radius: 0;
+    }
+
+    .sub-heading {
+        font-weight: 600;
+        // color: $FONT_COLOR_GRAY;
+        // letter-spacing: .2px;
+    }
+
+    .forgot {
+        font-size: 13px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.svg-box {
+    padding: .5rem .7rem;
+    background-color: rgb(233 238 253 / 48%);
+    border: 1px solid rgba(194, 202, 202, 0.714);
+    color: rgb(38, 40, 40);
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .login-component {
+
+        .form {
+            padding: 3rem;
+        }
+
+        .image-box {
+            display: block;
+        }
+    }
+}
