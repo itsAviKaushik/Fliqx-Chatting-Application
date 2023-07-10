@@ -5,6 +5,17 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
+// $primary: #5873ff;
+// $primary: #ff0000;
+
+$theme-colors: (
+  "primary": #5873ff,
+  "danger": #ff4136
+);
+
+$font-size-root: .9rem;
+$body-color: #444746;
+
 // Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -18,5 +29,16 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/card";
 
 @import "../node_modules/bootstrap/scss/utilities/api";
+
+// Custom Theme Customizations
+@import "./theme/index.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Public Sans', sans-serif;
+}

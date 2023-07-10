@@ -1,0 +1,8 @@
+@import "../../node_modules/bootstrap/scss/forms";
+
+.form-control {
+    &:focus {
+        border: 1px solid rgba(194, 202, 202, 0.714);
+        box-shadow: none;
+    }
+}
