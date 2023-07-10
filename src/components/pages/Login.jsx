@@ -1,5 +1,5 @@
 // import login from '../../assets/images/login.jpg'
-import logo from '../../assets/images/logo/Favicon.png'
+import logo from '../../assets/images/logo/logo.png'
 import './css/login.scss'
 
 function Login() {
@@ -7,7 +7,7 @@ function Login() {
         <div className="login-component row g-0">
             <div className='col-md-12 form'>
                 <form className="mx-auto">
-                    <div className='d-flex align-items-center justify-content-center'>
+                    <div className='d-flex align-items-center justify-content-center' style={{ gap: ".5rem" }}>
                         <img src={logo} alt="logo" style={{ width: 50, height: 50 }} />
                         <h4 className='pt-2'>Fliqx</h4>
                     </div>
