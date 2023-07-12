@@ -1,0 +1,118 @@
+$BOX_HEIGHT: 85vh;
+
+// body {
+//     margin-top: 20px;
+// }
+.content {
+    // background-color: #dee2e6;
+    background-color: rgb(233 238 253 / 48%);
+    background-image: url(../../../assets/images/login.jpeg);
+    background-size: cover;
+
+    .box {
+        min-height: 100vh;
+        background-color: rgba(194, 202, 202, 0.593);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    /* max-height: 800px; */
+    // max-height: 60vh;
+    max-height: calc($BOX_HEIGHT - 130px);
+    padding-bottom: 60px !important;
+    overflow-y: scroll;
+    /* background-image: url(../../../assets/images/chat_bg.jpg); */
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0
+}
+
+.chat-message-left {
+    margin-right: auto;
+}
+
+.chat-message-left .message {
+    background: linear-gradient(#51d6b6, #3fe3bc);
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+
+.chat-message-right .message {
+    background: #ebebeb;
+}
+
+.flex-grow-0 {
+    flex-grow: 0 !important;
+}
+
+.pl-3 {
+    padding-left: 1rem;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.border-right {
+    border-right: 1px solid #dee2e6 !important;
+}
+
+.chat-list {
+    height: calc($BOX_HEIGHT - 140px);
+}
+
+.send-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    // display: none;
+}
+
+.content .app-box {
+    height: $BOX_HEIGHT;
+    // max-height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+    $BOX_HEIGHT: 100vh;
+
+    .content .app-box {
+        height: $BOX_HEIGHT;
+        // max-height: 60vh;
+    }
+
+    .chat-list {
+        height: calc($BOX_HEIGHT - 140px);
+    }
+
+    .avi-chat-box.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .chat-messages {
+        padding: 1rem;
+        max-height: 90vh;
+    }
+}
