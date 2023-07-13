@@ -235,7 +235,7 @@ function Chatroom() {
                                     <div className='d-flex justify-content-center flex-column align-items-center' style={{ height: "100%" }}>
                                         <img src={logo} alt="logo" style={{ width: 100, height: 100 }} />
                                         <h4 className='p-4'>Fliqx - Chatting Application</h4>
-                                        <p>Let&apos;s connect to your loved ones and continue the remarkable relationship. </p>
+                                        <p>Let&apos;s connect to your loved ones and continue the remarkable relationships. </p>
                                         <p className='text-muted'>Please Report to us if you find any problem regarding the Application.</p>
                                     </div>
                                 }
