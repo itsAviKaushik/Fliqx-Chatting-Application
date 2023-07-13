@@ -7,9 +7,10 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route exact path='/' element={<Chatroom />} />
         <Route exact path='/login' element={<Login />} />
-        <Route exact path='/chatroom' element={<Chatroom />} />
         <Route exact path='/chatroom/:id' element={<Chatroom />} />
+        <Route exact path='/chatroom' element={<Chatroom />} />
       </Routes>
     </Router>
   )
